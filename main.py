@@ -1,3 +1,5 @@
+from menu import menusito
+
 print('''
     ***********************************
     Bienvenidos a AromaCampus
@@ -11,11 +13,7 @@ print('''Que deseas hacer?
 op=int(input('Escriba su opcion'))
 match op:
     case 1:
-        print('''
-        1. Latte       $7.000
-        2. Capuccino   $8.000
-        3. Americano   $9.500
-        ''')
+        menusito()
     case 2:
         print('''Desea agregar un cafe
         1. si
