@@ -6,7 +6,7 @@ print('''
 print('''Que deseas hacer?
     1. Ver menu
     2. Agregar nuevo cafe
-    3. Salir
+    3. Editar Cafe
     ''')
 op=int(input('Escriba su opcion'))
 match op:
@@ -27,3 +27,8 @@ match op:
                 cafe=input('Ingrese el nombre del cafe')
                 precio=int(input('Ingrese el precio del cafe'))
                 print('El cafe se a agregado correctamente:' , cafe, precio)
+    case 3:
+        print('''Desea editar algun cafe
+            1. si
+            2. no
+            ''')
