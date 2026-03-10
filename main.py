@@ -1,4 +1,5 @@
 from menu import menusito
+from agregarCafe import cafesito
 
 print('''
     ***********************************
@@ -15,16 +16,7 @@ match op:
     case 1:
         menusito()
     case 2:
-        print('''Desea agregar un cafe
-        1. si
-        2. No
-        ''')
-        select=int(input('Agregue respuesta'))
-        match select:
-            case 1:
-                cafe=input('Ingrese el nombre del cafe')
-                precio=int(input('Ingrese el precio del cafe'))
-                print('El cafe se a agregado correctamente:' , cafe, precio)
+        cafesito()
     case 3:
         print('''Desea editar algun cafe
             1. si
